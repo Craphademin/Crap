@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كراب هادمين - في طريق الكابتن</title>
+    <style>
+        /* الأسلوب السابق هنا */
+
+        /* تحديد تنسيق النص للغة الإنجليزية */
+        .english {
+            direction: ltr;
+        }
+
+        .driver-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .driver-info {
+            text-align: center;
+        }
+
+        .driver-info h2 {
+            margin-bottom: 10px;
+        }
+
+        .driver-status {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .action-button {
+            background-color: #ffc107;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .action-button:hover {
+            background-color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color: #ffc107;">"craphademin"</span></h1>
+        <p>الكابتن في طريقه إليك.</p>
+    </header>
+    
+    <div class="driver-container">
+        <div class="driver-info">
+            <h2>الكابتن في الطريق إليك</h2>
+            <p>سيصل إليك قريبًا.</p>
+        </div>
+        <div class="driver-status">
+            <button id="cancelButton" class="action-button">إلغاء المشوار</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("cancelButton").addEventListener("click", function() {
+            // هنا يمكنك إضافة الإجراءات اللازمة لإلغاء المشوار
+            alert("تم إلغاء المشوار بنجاح.");
+        });
+    </script>
+</body>
+</html>
